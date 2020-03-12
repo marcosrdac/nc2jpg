@@ -1,6 +1,6 @@
-# nc2ad
+# nc2jpg
 
-This program exports a NetCDF4 file variable to a JPEG file (values are scaled to fit between 0-255). JPEG compression can be chosen.
+This program exports a NetCDF file variable to a JPEG file (values are scaled to fit between 0-255). JPEG quality can be chosen. This code is meant to ease posterior creation of handmade masks for a NetCDF variable with an image editor like *GIMP*.
 
 
 ## Dependencies:
