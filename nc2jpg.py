@@ -21,8 +21,6 @@ def choose_variable(ncf):
 
 assert len(argv)>1
 filename=argv[1]
-ncf = nc.Dataset(filename)
-
 if len(argv)<3:
     variable = choose_variable(ncf)
 else:
@@ -33,6 +31,7 @@ if len(argv)<4:
 else:
     variable=argv[3]
 
+ncf = nc.Dataset(filename)
 img = ncf[variable]
 maxval = np.max(img)
 minval = np.min(img)
