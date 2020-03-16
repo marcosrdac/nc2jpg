@@ -25,6 +25,8 @@ pip3 install --user numpy scipy pillow
 
 ## USAGE
 
+
+
 ```sh
 ./nc2jpg.py INPUT_FILE_PATH.nc
 ```
