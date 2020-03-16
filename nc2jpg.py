@@ -20,6 +20,7 @@ def choose_variable(ncf):
     print()
     return(variable)
 
+
 # reading inputfrom user
 assert len(argv) > 1 # argv[0]: name of this file
 filepath = argv[1]   # first argument is input filepath

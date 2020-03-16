@@ -25,18 +25,24 @@ pip3 install --user numpy scipy pillow
 
 ## USAGE
 
-
-
 ```sh
-./nc2jpg.py INPUT_FILE_PATH.nc
+./nc2jpg.py INPUT_FILE_PATH.nc [-o OUTPUT_PATH] [-v VARIABLE] [-q QUALITY]
 ```
 
-Image output to INPUT_FILE_PATH.jpg
+Input file argument:
+  - `INPUT_FILE_PATH`: path of NetCDF file to be saved as picture. Needs to be the first argument given.
+
+Arguments for options
+  - `VARIABLE`: exact name of NetCDF file variable to be extracted.
+  - `OUTPUT_PATH`: path to save picture. Can be either a complete filepath, or a filepath without extension (defaults to save picture in JPEG), or even a folder path to save file into (in this case, file is saved as "`INPUT_FILE_PATH`.jpg").
+  - `QUALITY`: in case JPEG is your output format, then specify compression quality (between 0 and 100, lower `QUALITY` means lossier compression). This parameter is completely ignore in case another format is chosen.
+
+If options are not chosen, nc2jpg will prompt you for them.
 
 
 ## contact
 
-  - *Name*: Marcos Conceição
-  - *E-mail*: [marcosrdac@gmail.com](mailto:marcosrdac@gmail.com)
-  - *GitHub*: [marcosrdac](github.com/marcosrdac)
-  - *Website*: [marcosrdac.github.io](http://marcosrdac.github.io)
+  - **Name**: Marcos Reinan de Assis Conceição.
+  - **E-mail**: [marcosrdac@gmail.com](mailto:marcosrdac@gmail.com)
+  - **GitHub**: [marcosrdac](github.com/marcosrdac)
+  - **Website**: [marcosrdac.github.io](http://marcosrdac.github.io)
